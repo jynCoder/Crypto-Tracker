@@ -11,6 +11,8 @@ import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
 import Button from "@mui/material/Button";
 import CloseIcon from "@mui/icons-material/Close";
+import HomeIcon from "@mui/icons-material/Home";
+import { useNavigate } from "react-router-dom";
 
 function generateUsdPoints(basePrice = 50) {
   const now = Date.now();
@@ -36,6 +38,7 @@ function CoinPage({ prices }) {
   const availableCurrencies = ["usd", "eur", "cny"];
   const [selectedCurrency, setSelectedCurrency] = useState("usd");
   const [usdPointsCache, setUsdPointsCache] = useState({});
+  const navigate = useNavigate();
 
   // Hamburger menu state
   const [anchorEl, setAnchorEl] = useState(null);
@@ -97,6 +100,32 @@ function CoinPage({ prices }) {
 
   return (
     <Container maxWidth="xl" sx={{ py: 5 }}>
+      {/* Return Home Button */}
+    <Button
+      startIcon={<HomeIcon />}
+      onClick={() => navigate("/")}
+      sx={{
+        position: "absolute",
+        top: 24,
+        left: 24,
+        zIndex: 2000,
+        background: "#111",
+        color: "#00ffcc",
+        border: "1.5px solid #00ffcc",
+        fontWeight: 700,
+        px: 2,
+        py: 1,
+        borderRadius: 2,
+        "&:hover": {
+          background: "#191923",
+          color: "#fff",
+          borderColor: "#fff"
+        }
+      }}
+      size="medium"
+    >
+      Home
+    </Button>
       <Typography variant="h4" align="center" color="#00ffcc"   gutterBottom
         sx={{
             transition: "transform 0.2s cubic-bezier(.4,2,.3,1), text-shadow 0.2s",
@@ -178,7 +207,7 @@ function CoinPage({ prices }) {
         PaperProps={{
           sx: {
             background: "rgba(17,17,17,0.96)",
-            color: "#111",
+            color: "#FFF",
             p: { xs: 2, md: 6 },
           }
         }}
@@ -217,6 +246,20 @@ function CoinPage({ prices }) {
           overflow: "visible",
         }}
       >
+      <Typography
+          variant="h5"
+          align="center"
+          sx={{
+            color: "#00ffcc",
+            fontWeight: 700,
+            fontSize: { xs: "1.2rem", md: "1.7rem" },
+            mb: 1,
+            letterSpacing: "0.08em",
+            textShadow: "0 1px 4px #0007",
+          }}
+        >
+        PRICE OF {coin?.toUpperCase()} IN LAST 10 HOURS
+        </Typography>
         {/* Hamburger IconButton inlaid on chart */}
         <IconButton
           aria-label="select currency"
