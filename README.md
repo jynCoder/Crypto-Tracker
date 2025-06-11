@@ -54,5 +54,11 @@ Inspired by classic tickers and modern dashboard aesthetics
 
 Built with open source tools: CoinGecko API, Material UI, Nivo Charts, and Haikei for SVG waves.
 
+## Preview Pics
+![{12053677-E46E-481B-BFD5-9398B4AEE91B}](https://github.com/user-attachments/assets/bb94aaa7-a4e8-4e20-8b07-ecebfef38a93)
+![{D9E14F39-91C6-4C10-818B-0FC969649AFB}](https://github.com/user-attachments/assets/0eaec10a-5013-4419-8c8d-27bd76b3f74a)
+
+
+
 ## **Thanks for checking out my crypto dashboard project!**
 
