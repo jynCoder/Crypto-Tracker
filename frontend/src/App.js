@@ -64,7 +64,7 @@ function App() {
               />
             }
           />
-          <Route path="/coin/:coin" element={<CoinPage />} />
+          <Route path="/coin/:coin" element={<CoinPage prices={prices} />} />
         </Routes>
       </Router>
     </ThemeProvider>
