@@ -31,7 +31,7 @@ While the backend (for CoinGecko API access) was started, this project’s main 
 
 You’ll see a variety of demo coins, price cards, and interactive charts—showcasing the design and mechanics of what I envisioned for the project!
 
-## Tech Stack
+## 🛠️ Tech Stack
 React (with hooks and router)
 
 Material UI (MUI components, icons, theming)
@@ -40,7 +40,7 @@ Nivo (interactive charting)
 
 SVG / CSS (for animation and background)
 
-## Future Plans
+## 💡 Future Plans
 Reactivate and secure the backend for live API data
 
 User portfolios and real-time alerts
@@ -49,7 +49,8 @@ More advanced analytics and chart features
 
 Mobile-first improvements
 
-## Inspired by classic tickers and modern dashboard aesthetics
+## 🙌 Credits/Resources 
+Inspired by classic tickers and modern dashboard aesthetics
 
 Built with open source tools: CoinGecko API, Material UI, Nivo Charts, and Haikei for SVG waves.
 
