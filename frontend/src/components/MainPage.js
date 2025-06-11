@@ -41,7 +41,8 @@ function MainPage({ prices, currentCurrency, currencySymbols, currencies }) {
               minWidth: 180,
               flex: "1 1 160px",
               background: "#222",
-              border: "2px solid #00ffcc",
+              boxShadow: "0 8px 2px 0 #0009, 0 2px 8px 0 #000",
+              border: "2.5px solid #111",
               borderRadius: 2,
               px: 3,
               py: 2,
@@ -52,9 +53,10 @@ function MainPage({ prices, currentCurrency, currencySymbols, currencies }) {
               cursor: "pointer",
               transition: "box-shadow 0.2s, border-color 0.2s, transform 0.22s cubic-bezier(0.4,0,0.2,1)",
               "&:hover": {
-                boxShadow: "0 0 18px #00ffcc",
-                borderColor: "#fff",
+                boxShadow: "0 0 18px #000",
+                borderColor: "#000",
                 transform: "scale(1.2)",
+                rotate: "-3deg",
                 userSelect: "none",
               },
             }}

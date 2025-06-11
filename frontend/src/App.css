@@ -38,7 +38,8 @@ h1 {
   background: #222;
   border-radius: 8px;
   color: #00ffcc;
-  box-shadow: 0 0 8px #00ffcc77, 0 0.5rem 1rem -.25rem #00181a;
+  box-shadow: "0 8px 2px 0 #0009, 0 2px 8px 0 #000";
+  border: 2.5px solid #111;
   font-size: 1rem;
   transition: border 0.2s, box-shadow 0.2s;
 }
@@ -48,6 +49,7 @@ h1 {
   background: #263238;
   color: #fff;
   scale: 1.15;
+  rotate: -2deg;
 }
 
 .scroller_inner {
